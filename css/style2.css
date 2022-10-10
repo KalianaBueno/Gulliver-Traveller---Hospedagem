@@ -18,7 +18,7 @@ html {
 }
 
 .container_banner {
-    background-image: url(/image/city.svg);
+    background-image: url(/image/hotel.svg);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: right;
@@ -26,12 +26,12 @@ html {
 
 h2 {
     font-size: 1.5rem;
-    color: #EB0054;
+    color: #F50057;
 }
 
 .fa-solid {
 font-size: 3rem;
-color: #EB0054;
+color: #F50057;
 }
 
 
@@ -47,14 +47,14 @@ ul {
 
 a {
     text-decoration: none;
-    color: #EB0054;
+    color: #F50057;
     font-weight: 400;
 }
 
 .header {
     width: 100%;
     height: 10vh;
-    color:#EB0054;
+    color:#F50057;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -86,25 +86,39 @@ a {
 
 
 .header_titulo {
-    font-size: 3.5rem;
-    color: #EB0054;
+    font-size: 3rem;
+    color: #F50057;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .header_texto {
     width: 100%;
     font-size: 1.3rem;
-    line-height: 2rem;
     text-align: center;
-    color: rgb(75, 75, 75);
-    margin-bottom: 1.8rem;
+    color: rgb(167, 166, 166);
+    margin-bottom: 2rem;
+}
+
+.header_botao {
+    width: 70%;
+    background-color: #F50057;
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    align-self: center;
+}
+
+.header_botao:hover {
+    background-color: #ccc;
 
 }
 
-
-.opcoes {
-    background-color: #111111;
+.destaques {
+    background-color: #000;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -113,12 +127,12 @@ a {
     text-align: center;
 }
 
-.opcoes h3 {
+.destaques h3 {
     font-size: 2rem;
-    margin: 25px 0 25px;
+    margin-bottom: 35px;
 }
 
-.box_opcoes {
+.box_hoteis {
     /* border: 1px solid #fff; */
     display: flex;
     flex-wrap: wrap;
@@ -127,65 +141,79 @@ a {
 }
 
 
-.opcao {
-    width: 30%;
-    height: 40vh;
-    margin: 20px;
+.hotel {
+    width: 20%;
+    height: 45vh;
+    margin: 10px 5px;
     border: 1px solid #fff;
-    padding: 10px;
+    padding: 10px 5px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    word-spacing: 0.2rem;
 }
 
-.opcao_imagem {
-    width: 95%;
-    height: 30%;
-
-}
-
-
-.opcao_titulo {
-    margin: 20px 0;
-    font-size: 1.2rem;
+.hotel h2 {
     color: #fff;
 }
 
+.hotel__imagem {
+    width: 95%;
+    height: 50%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
 
-.opcao_descricao {
-    margin-bottom: 30px;
+.hotel__nome {
+    margin: 5px 0;
     font-size: 0.8rem;
+    color: rgb(138, 137, 137);
+    font-weight: 700;
+}
+
+.hotel_cidade {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.hotel__avaliacao i {
+    font-size: 0.8rem;
+}
+
+.estrela__cinza {
+    color: #ccc;
+}
+
+
+.hotel__descricao {
+    margin: 10px 10px 20px; 
+    font-size: 0.5rem;
     text-align: center;
-    line-height: 1.2rem;
+    line-height: 1rem;
 
 }
 
-.opcao_link {
+.hotel__link {
     text-decoration: none;
-    padding: 0.5rem 1.2rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    background-color: #EB0054;
+    background-color: #F50057;
     color: #fff;
     text-transform: uppercase;
+    letter-spacing: 1px;
     font-size: 0.8rem;
-    font-weight: 900;
     justify-content: center;
 }
 
 
-.opcao_link:hover {
+.hotel__link:hover {
 background-color: #fff;
-color: #EB0054;
+color: #F50057;
 }
 
 .rodape {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #EB0054;
+    background-color: #F50057;
     padding: 50px 0;
 }
 
@@ -215,9 +243,8 @@ color: #EB0054;
 @media (max-width: 940px) {
 
     .container_banner {
-        background-color: #EB0054;
+        background-color: #F50057;
         background-position: bottom;
-        background-image: url(../image/city2.svg);
     }
 
     h2 {
@@ -229,26 +256,20 @@ color: #EB0054;
         color: #fff;
         }
     
+    
     .links_menu {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
-    .header_menu_item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     a {
         color: #fff;
-        font-weight: 90;  
+        font-weight: 100;
     }
 
-    .header{
+    .header {
         text-align: center;
-
     }
 
     .header_chamada {
@@ -272,20 +293,27 @@ color: #EB0054;
         font-size: 1rem;
         color: #fff;
     }
+    
+    .header_botao {
+        width: 70%;
+        background-color: #fff;
+        color: #F50057;
+        align-self: center;
+    }
+
+    .header_botao:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
 
 
-    .box_opcoes {
+    .box_hoteis {
       flex-direction: column;
     }
 
-    .opcao {
+    .hotel {
         width: 60%;
         height: 50vh;
-    }
-
-    .opcao_link {
-        padding: 0.8rem 1.2rem;
-        font-size: 0.6rem;
     }
 
 }
