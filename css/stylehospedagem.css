@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: #171c2d;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.carrossel {
+    width: 100%;
+    height: 60%;
+}
+
+.conteudo {
+    width: 100%;
+    background-color: #171c2d;
+    display: flex;
+    justify-content: justify;
+    flex-wrap:wrap;
+   
+}
+
+h1 {
+    background-color: #171c2d;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 15px;
+}
+
+h2 {
+    background-color: #171c2d;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px;
+}
+
+.card {
+    width: 30%;
+    margin: 20px;
+    border-radius: 17px;
+
+}
+
+.card img {
+    border-radius: 20px;
+    height: 60%;
+}
+
+.card-title {
+    color: #171c2d;
+}
+
+.card-text {
+    color: #171c2d;
+    font-size: 0.8rem;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #eab56f;
+    border: none;
+}
+
+
+.api {
+    background-color: #1e1e1e;
+}
+
+#coordenadas {
+    color: #f2f2f2;
+    text-align: center;
+}
+
+
+#mapa{
+    text-align: center;
+
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eab56f;
+    padding: 50px 0;
+    margin-top: 20px;
+}
+
+.rodape ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.rodape ul li {
+    margin-right: 10px;
+}
+
+.rodape ul li a {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.rodape p {
+    color: #fff;
+    text-align: center;
+}
+
+
+
+@media (max-width: 840px) {
+    .card {
+        width: 100%;
+    }
+}

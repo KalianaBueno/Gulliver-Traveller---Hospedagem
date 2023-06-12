@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Novo ponto turistico</title>
+
+    <!-- link para css abaixo: -->
+    <link rel="stylesheet" href="./css/styleform.css">
+    
+</head>
+
+
+<body>
+
+    <!-- inicio do formulario -->
+
+    <div class="container">
+
+    <form action="" method="post" id="dados">
+        <h1>Qual o novo destino?</h1>
+
+        <h2>Cadastre um novo ponto turístico e ajude novos viajantes a ter a mesma experência inesquecível que você!</h2>
+
+<!-- espacos do formulário -->
+        <p>
+            <label for="text">Nome do local:</label></p>
+           <input type="text" id="text" class="componente" placeholder="Ex: Machu Picchu" autofocus>
+        </p>
+
+        <p>
+             <label for="localizacao">Localização:</label>
+        </p> <input list="opcoes" id="localizacao" placeholder="Selecione uma opção">
+            <datalist id="opcoes">
+                <option value="selecione uma opção" disabled>
+                    <option value="Brasil">
+                    <option value="Exterior">
+                </option>                  
+            </datalist>
+        </p>
+        
+        <p>
+            <label for="endereco">Endereço:</label>
+        </p> 
+            <input type="text" id="endereco">
+        </p>
+
+
+        <p>
+        <label for="valor">Valor do ingresso por pessoa:</label></p>
+        <p><input type="text" id="valor" placeholder="R$ 79,90">
+        </p>
+
+<p>
+       <h2>Descreva como foi sua experiência:</h2>
+</p>
+            <textarea name="mensagem" id="mensagem">
+
+            </textarea>
+ 
+        <p>
+        <button type="submit">Cadastrar destino</button>
+        </p>
+        
+
+     </form>
+
+    </div>
+    </body>
+
+
+    
+</html>
